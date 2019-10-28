@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>02 Class Page</h2>
+<form method="post" th:action="@{/new-char/03_attributes}" th:object="${character}">
+
+Simple Char value 
+<input type="text" th:field="*{simpleChar}" />
+
+<input type="submit">
+</form>
+
+</body>
+</html>
