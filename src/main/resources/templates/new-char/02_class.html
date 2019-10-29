@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -9,8 +9,9 @@
 <h2>02 Class Page</h2>
 <form method="post" th:action="@{/new-char/03_attributes}" th:object="${character}">
 
-Simple Char value 
-<input type="text" th:field="*{simpleChar}" />
+
+String value<input type="text" th:field="*{stringValue}" /> <br/>
+Integer value<input type="text" th:field="*{intValue}" />
 
 <input type="submit">
 </form>

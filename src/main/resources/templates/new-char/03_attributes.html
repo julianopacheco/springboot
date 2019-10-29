@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -8,9 +8,11 @@
 
 <h2>03 Attributes Page</h2>
 
-Simple Char value <span th:text="${character.simpleChar}" />
+Simple char value <span th:text="${character.simpleChar}" /> <br/>
+String value <input type="text" th:field="${character.stringValue}" /> <br/>
+Integer value<input type="text" th:field="${character.intValue}" />
 
-</form>
+<a th:href="@{/new-char/04_clear}">Cleanning Session</a>
 
 </body>
 </html>
